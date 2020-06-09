@@ -12,6 +12,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { DvdDetailComponent } from './modules/dvd/dvd-detail/dvd-detail.component';
 import { DvdFormComponent } from './modules/dvd/dvd-form/dvd-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BookDetailComponent } from './modules/book/book-detail/book-detail.component';
+import { BookAuthorsComponent } from './modules/book/book-authors/book-authors.component';
 
 // const appRoutes :Routes = [
 //   { path: 'dvds', component: DvdComponent },
@@ -27,7 +29,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     DvdComponent,
     PageNotFoundComponent,
     DvdDetailComponent,
-    DvdFormComponent
+    DvdFormComponent,
+    BookDetailComponent,
+    BookAuthorsComponent
   ],
   imports: [
     BrowserModule,
