@@ -10,6 +10,8 @@ import { MaterialModule } from './material.module';
 // import { Routes, RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { DvdDetailComponent } from './modules/dvd/dvd-detail/dvd-detail.component';
+import { DvdFormComponent } from './modules/dvd/dvd-form/dvd-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 // const appRoutes :Routes = [
 //   { path: 'dvds', component: DvdComponent },
@@ -24,14 +26,16 @@ import { DvdDetailComponent } from './modules/dvd/dvd-detail/dvd-detail.componen
     BookComponent,
     DvdComponent,
     PageNotFoundComponent,
-    DvdDetailComponent
+    DvdDetailComponent,
+    DvdFormComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
     // RouterModule.forRoot(appRoutes),
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

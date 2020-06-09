@@ -5,11 +5,13 @@ import { BookComponent } from './modules/book/book.component';
 import { PageNotFoundComponent } from './modules/page-not-found/page-not-found.component';
 import { Routes, RouterModule } from '@angular/router';
 import { DvdDetailComponent } from './modules/dvd/dvd-detail/dvd-detail.component';
+import { DvdFormComponent } from './modules/dvd/dvd-form/dvd-form.component';
 
 
 const appRoutes :Routes = [
   { path: 'dvds', component: DvdComponent },
   { path: 'books', component: BookComponent },
+  { path: 'dvds/new', component: DvdFormComponent },
   { path: 'dvds/:index', component: DvdDetailComponent },
   { path: '', pathMatch: 'full', redirectTo: 'dvds' },
   { path: '**', component: PageNotFoundComponent}
